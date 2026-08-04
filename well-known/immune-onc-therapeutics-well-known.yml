@@ -1,0 +1,113 @@
+generated: '2026-08-04'
+method: probed
+source: live HTTP probes of the company web hosts
+host: https://www.immune-onc.com
+note: >-
+  No /.well-known/ discovery document is published on any Immune-Onc host. Every path below was
+  probed on https://www.immune-onc.com, https://immune-onc.com and https://immuneonc.com (the
+  corporate mail domain, which 301-redirects its web root to https://www.immune-onc.com/), and
+  every one returned 404. This
+  record exists as the negative-result evidence table for the probe; no WellKnown, SecurityTxt or
+  AgentCard pointer is wired in apis.yml because no document was found. Absence is a valid,
+  expected result for a clinical-stage therapeutics company with no software product surface.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+  note: Squarespace returns a JSON body {"message":"security.txt not found"} rather than the HTML 404 shell.
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+  note: Legacy pre-0.3 A2A agent-card path, probed as well. No card at either location.
+other_paths_probed:
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /openapi.yaml
+  status: 404
+- path: /swagger.json
+  status: 404
+- path: /api-docs
+  status: 404
+- path: /docs
+  status: 404
+- path: /redoc
+  status: 404
+- path: /robots.txt
+  status: 200
+  note: Squarespace default robots.txt. Declares the sitemap; no AI-agent-specific disallow group.
+- path: /sitemap.xml
+  status: 200
+  note: >-
+    Squarespace sitemap listing 150+ URLs. Enumerated 2026-08-04 and used to confirm the full set
+    of published pages; it contains no privacy, terms, legal or contact page.
+- path: /press-releases?format=rss
+  status: 400
+  note: 'Squarespace: "Unknown response format for page type" — this is a landing page, not a collection.'
+- path: /pr-posts?format=rss
+  status: 200
+  content_type: application/rss+xml
+  items: 13
+  note: >-
+    Working RSS 2.0 feed of the press-release collection. The ONLY machine-readable document
+    Immune-Onc publishes on any of its hosts. Wired in apis.yml as type BlogRSS.
+- path: /news-1?format=rss
+  status: 200
+  content_type: application/rss+xml
+  items: 18
+  note: Working RSS 2.0 feed of the news collection. Wired in apis.yml as type BlogRSS.
+hosts_probed:
+- https://www.immune-onc.com
+- https://immune-onc.com
+- host: https://immuneonc.com
+  note: >-
+    Corporate mail domain. Its web root returns 200 only after redirecting to
+    https://www.immune-onc.com/; /.well-known/security.txt, /.well-known/agent-card.json,
+    /.well-known/agent.json, /llms.txt and /openapi.json all 404 here as well.
+registries_probed:
+- registry: npm
+  query: immune-onc
+  result: no first-party package (search returns unrelated packages only)
+- registry: pypi
+  query: immune-onc
+  result: 404 on https://pypi.org/pypi/immune-onc/json
+- registry: github
+  query: immune-onc
+  result: >-
+    https://github.com/immune-onc returns 404 and the GitHub user/org search API returns
+    total_count 0 — the company operates no public GitHub organization.
+site_pages_probed:
+- {path: /privacy, status: 404}
+- {path: /privacy-policy, status: 404}
+- {path: /terms, status: 404}
+- {path: /terms-of-use, status: 404}
+- {path: /contact, status: 404}
+- {path: /contact-us, status: 404}
+- {path: /legal, status: 404}
+- note: >-
+    The site publishes no privacy policy, terms of service or legal page at any conventional path,
+    and none is linked from the homepage or the site footer. Contact details are published inline
+    on the page footer (795 San Antonio Road, Palo Alto CA 94303 / info@immuneonc.com /
+    650-460-7691) rather than on a contact page. No PrivacyPolicy or TermsOfService pointer is
+    therefore wired in apis.yml.
+subdomains_probed:
+- host: api.immune-onc.com
+  dns: NXDOMAIN
+- host: developer.immune-onc.com
+  dns: NXDOMAIN
+- host: docs.immune-onc.com
+  dns: NXDOMAIN
+- host: portal.immune-onc.com
+  dns: NXDOMAIN
+x-evidence:
+  fetched: '2026-08-04'
+  method: curl -L follow, 12s timeout, both apex and www

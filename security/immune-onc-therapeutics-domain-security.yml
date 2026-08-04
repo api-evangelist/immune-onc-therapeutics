@@ -1,0 +1,58 @@
+generated: '2026-08-04'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.immune-onc.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  3 20:57:23 2026 GMT
+  hsts: null
+domains:
+- domain: immune-onc.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  mx: [smtp.secureserver.net, mailstore1.secureserver.net]
+  note: >-
+    Public web domain (Squarespace-hosted marketing site). It publishes MX records and therefore
+    accepts mail, but has no SPF TXT record and no _dmarc record, so mail claiming to come from
+    @immune-onc.com has no published sender authentication or reporting policy.
+- domain: immuneonc.com
+  dnssec: false
+  caa: []
+  spf: true
+  spf_record: 'v=spf1 ip4:50.209.135.157/29 include:spf.protection.outlook.com ~all'
+  dmarc: true
+  dmarc_policy: quarantine
+  dmarc_record: 'v=DMARC1; p=quarantine; pct=100'
+  mx: [immuneonc-com.mail.protection.outlook.com]
+  web: >-
+    Its web root resolves and returns 200, but only by redirecting to https://www.immune-onc.com/ —
+    it serves no distinct site. Re-probed 2026-08-04 for /.well-known/security.txt,
+    /.well-known/agent-card.json, /.well-known/agent.json, /llms.txt and /openapi.json: all 404.
+  note: >-
+    Corporate mail domain (Microsoft 365), published on the company website as the contact address
+    info@immuneonc.com. Distinct from the hyphenated web domain. Added by hand-probe because it is
+    never referenced as a host in apis.yml and so is invisible to the automated host walk.
+programs:
+  vulnerability_disclosure: none
+  trust_center: none
+  note: >-
+    probe-security-programs.py run 2026-08-04 returned `vdp=none trust=none`. No security.txt
+    Policy/Contact, no bug-bounty program (HackerOne / Bugcrowd / Intigriti), no responsible- or
+    vulnerability-disclosure page, and no trust centre with named certifications (SOC 2, ISO 27001,
+    PCI DSS, HIPAA, FedRAMP) was found on any host. Per the pipeline contract no
+    vulnerability-disclosure or trust-center artifact is written and no Security, Compliance or
+    TrustCenter pointer is wired, because there is nothing verified to point at.
+x-evidence:
+  probed: '2026-08-04'
+  method: dig TXT/MX/CAA + _dmarc lookup, TLS/HTTP HEAD
+  findings:
+  - No CAA records on either domain — any public CA may issue for these names.
+  - No DNSSEC on either domain.
+  - No HSTS response header on www.immune-onc.com.
+  - >-
+    The two domains diverge: the mail domain immuneonc.com is SPF- and DMARC-protected
+    (p=quarantine), while the web domain immune-onc.com accepts mail with neither. A look-alike
+    sender on the web domain is the unprotected path.

@@ -1,0 +1,69 @@
+# Immune-Onc Therapeutics
+
+> Immune-Onc Therapeutics, Inc. is a clinical-stage biopharmaceutical company in Palo Alto, California, founded in 2016 by Charlene Liao and Guo Liang Yu. It develops novel antibody therapeutics targeting myeloid cell inhibitory receptors — principally the Leukocyte Immunoglobulin-Like Receptor subfamily B (LILRB) — for blood cancers, solid tumors, and autoimmune and inflammatory disease. Immune-Onc is a therapeutics developer, not a software or platform company. It publishes NO public API, no developer portal, no OpenAPI or other machine-readable contract, no SDKs, and no /.well-known/ discovery surface. The links below are the company's real published web properties and its public clinical-trial registry entries.
+
+## Provenance
+
+- Generated: 2026-08-04
+- Method: generated (no /llms.txt is published by the provider; probed https://www.immune-onc.com/llms.txt and https://immuneonc.com/llms.txt, both HTTP 404)
+- Source: apis.yml + probed artifacts in this repository
+- Publisher of this file: API Evangelist (https://apievangelist.com) — this is a third-party catalog record, NOT a document served by Immune-Onc Therapeutics
+
+## APIs
+
+No public API. Contract discovery was run against every known host
+(www.immune-onc.com, immune-onc.com, immuneonc.com) and against the standard
+API subdomains (api., developer., docs., portal.) which do not resolve
+(NXDOMAIN). Every REST spec path (/openapi.json, /openapi.yaml, /swagger.json,
+/api-docs, /docs, /redoc), every /.well-known/ discovery path, and both A2A
+agent-card paths returned 404. There is no GraphQL surface and no MCP server.
+
+## Company
+
+- [Immune-Onc Therapeutics](https://www.immune-onc.com/): Company website (Squarespace-hosted).
+- [Team](https://www.immune-onc.com/team): Leadership, board, and scientific advisory board.
+- [Careers](https://www.immune-onc.com/careers): Open roles.
+- [LinkedIn](https://www.linkedin.com/company/immune-onc-therapeutics): Company profile.
+
+## Pipeline
+
+- [Pipeline overview](https://www.immune-onc.com/pipeline): Full development pipeline and stage of each program.
+- [IO-108](https://www.immune-onc.com/io108): Fully human IgG4 antagonist antibody targeting LILRB2 (ILT4); Phase 1b/2 in solid tumors including hepatocellular carcinoma.
+- [IO-202](https://www.immune-onc.com/io-202): First-in-class IgG1 antibody targeting LILRB4 (ILT3); Phase 1b in AML and CMML; FDA Fast Track and Orphan Drug designations.
+- [IO-106](https://www.immune-onc.com/io106): LAIR1-targeting myeloid and stromal checkpoint inhibitor candidate.
+- [Blood cancers](https://www.immune-onc.com/blood-cancers): Hematologic malignancy programs.
+- [Solid tumors](https://www.immune-onc.com/solid-tumors): Solid tumor programs.
+- [Immunology and inflammation](https://www.immune-onc.com/immunology-inflammation): Autoimmune and inflammatory disease programs.
+
+## Science and publications
+
+- [Publications and abstracts](https://www.immune-onc.com/publications-abstracts): Peer-reviewed papers, congress abstracts, and posters.
+
+## Patients
+
+- [For patients](https://www.immune-onc.com/for-patients): Patient-facing information.
+- [Expanded access policy](https://www.immune-onc.com/expanded-access-policy): Published expanded-access (compassionate use) policy. As stated on that page, Immune-Onc does not currently offer an expanded access program.
+
+## News
+
+- [Press releases](https://www.immune-onc.com/press-releases): Company press releases.
+- [News](https://www.immune-onc.com/news): Company and third-party news coverage.
+
+## Registries
+
+- [ClinicalTrials.gov — Immune-Onc Therapeutics](https://clinicaltrials.gov/search?spons=Immune-Onc%20Therapeutics): Public clinical-trial registry entries. Machine-readable via the NIH ClinicalTrials.gov API v2 (https://clinicaltrials.gov/api/v2/studies?query.spons=Immune-Onc) — that API is operated by NIH, not by Immune-Onc.
+- [Forge Global](https://forgeglobal.com/immune-onc-therapeutics_stock/): Secondary-market listing for the private company's shares.
+
+## Contact
+
+- Address: 795 San Antonio Road, Palo Alto, CA 94303, United States
+- Email: info@immuneonc.com
+- Phone: +1 650-460-7691
+
+Note the two distinct domains: immune-onc.com serves the website; immuneonc.com
+is the corporate mail domain (Microsoft 365) and redirects to
+https://www.immune-onc.com/ over HTTP.
+
+## Optional
+
+- [API Evangelist catalog record](https://raw.githubusercontent.com/api-evangelist/immune-onc-therapeutics/refs/heads/main/apis.yml): The APIs.json record this file was generated from.

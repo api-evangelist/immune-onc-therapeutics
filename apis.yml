@@ -1,17 +1,56 @@
 aid: immune-onc-therapeutics
 name: Immune-Onc Therapeutics
-description: 'Immune-Onc Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Immune-Onc Therapeutics, Inc. is a clinical-stage biopharmaceutical company headquartered in Palo
+  Alto, California, founded in 2016 by Charlene Liao and Guo Liang Yu. The company develops novel
+  antibody therapeutics that target myeloid cell inhibitory receptors — with a current focus on the
+  Leukocyte Immunoglobulin-Like Receptor subfamily B (LILRB) — to treat blood cancers, solid tumors,
+  and autoimmune and inflammatory disease. Its clinical pipeline includes IO-108, a fully human IgG4
+  antagonist antibody targeting LILRB2 (ILT4) in Phase 1b/2 for solid tumors including hepatocellular
+  carcinoma, and IO-202, a first-in-class IgG1 antibody targeting LILRB4 (ILT3) in Phase 1b for acute
+  myeloid leukemia and chronic myelomonocytic leukemia, which holds FDA Fast Track and Orphan Drug
+  designations. Preclinical programs include IO-312, a LILRB4-directed bispecific antibody, and IO-106
+  targeting LAIR1. The company has clinical collaborations with BeiGene, Regeneron, and Roche, and has
+  raised approximately $138 million across Series A and Series B financings from investors including
+  Northern Light Venture Capital, Vivo Capital, CLI Ventures, and the Stanford-StartX Fund. Immune-Onc
+  is a therapeutics developer, not a software or platform company: as of this profile it publishes no
+  public API, developer portal, OpenAPI or other machine-readable contract, no SDKs, no public GitHub
+  organization and no /.well-known/ discovery surface — its only machine-readable documents are two
+  Squarespace RSS feeds for its news and press-release collections. This record therefore captures the
+  company's verified public identity, its published web properties, its clinical-trial registry
+  presence, and the probed security posture of its public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/immune-onc-therapeutics/refs/heads/main/apis.yml
+image: https://static1.squarespace.com/static/60dc8b9325bba74a54bb572f/t/61003c309aa7560407b4842f/1627405360143/Imune-Onc%2BTheraputics_Logo%2BIteration_Final4-03.png?format=1500w
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-08-04'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Biotechnology
+- Biopharmaceutical
+- Oncology
+- Immunotherapy
+- Immuno-Oncology
+- Antibodies
+- Clinical Trials
+- Life Sciences
+- Healthcare
+- Drug Development
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +58,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/immune-onc-therapeutics-domain-security.yml
+- type: WellKnown
+  url: well-known/immune-onc-therapeutics-well-known.yml
+- type: LLMsTxt
+  url: llms/immune-onc-therapeutics-llms.txt
 - type: Website
+  url: https://www.immune-onc.com/
+- type: Team
+  url: https://www.immune-onc.com/team
+- type: Pipeline
+  url: https://www.immune-onc.com/pipeline
+- type: Publications
+  url: https://www.immune-onc.com/publications-abstracts
+- type: PressReleases
+  url: https://www.immune-onc.com/press-releases
+- type: News
+  url: https://www.immune-onc.com/news
+- type: Blog
+  url: https://www.immune-onc.com/news-1
+- type: BlogRSS
+  url: https://www.immune-onc.com/news-1?format=rss
+- type: BlogRSS
+  url: https://www.immune-onc.com/pr-posts?format=rss
+- type: Careers
+  url: https://www.immune-onc.com/careers
+- type: ForPatients
+  url: https://www.immune-onc.com/for-patients
+- type: ExpandedAccessPolicy
+  url: https://www.immune-onc.com/expanded-access-policy
+- type: ClinicalTrials
+  url: https://clinicaltrials.gov/search?spons=Immune-Onc%20Therapeutics
+- type: LinkedIn
+  url: https://www.linkedin.com/company/immune-onc-therapeutics
+- type: SecondaryMarket
   url: https://forgeglobal.com/immune-onc-therapeutics_stock/
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
