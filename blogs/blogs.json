@@ -6,15 +6,7 @@
       "feed_url": "https://www.immune-onc.com/news",
       "title": "",
       "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
-    },
-    {
-      "source": "https://www.immune-onc.com/news-1",
-      "feed_url": "https://www.immune-onc.com/news-1?format=rss",
-      "title": "",
-      "saved": 20,
-      "method": "discovered"
+      "method": "none"
     },
     {
       "source": "https://www.immune-onc.com/news-1?format=rss",
@@ -22,8 +14,15 @@
       "title": "",
       "saved": 0,
       "method": "feed"
+    },
+    {
+      "source": "https://www.immune-onc.com/news-1",
+      "feed_url": "https://www.immune-onc.com/news-1?format=rss",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
     }
   ],
   "post_count": 20,
-  "fetched": "2026-08-15T12:11:08Z"
+  "fetched": "2026-08-22T20:20:02Z"
 }
