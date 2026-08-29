@@ -20,6 +20,17 @@ description: >-
   company's verified public identity, its published web properties, its clinical-trial registry
   presence, and the probed security posture of its public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/immune-onc-therapeutics/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://static1.squarespace.com/static/60dc8b9325bba74a54bb572f/t/61003c309aa7560407b4842f/1627405360143/Imune-Onc%2BTheraputics_Logo%2BIteration_Final4-03.png?format=1500w
 x-type: company
 x-source: harvest:secondary-market
