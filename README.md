@@ -64,5 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Immune-Onc Therapeutics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/immune-onc-therapeutics_stock/
+Immune-Onc Therapeutics, Inc. is a clinical-stage biopharmaceutical company headquartered in Palo Alto, California, founded in 2016 by Charlene Liao and Guo Liang Yu. The company develops novel antibody therapeutics that target myeloid cell inhibitory receptors — with a current focus on the Leukocyte Immunoglobulin-Like Receptor subfamily B (LILRB) — to treat blood cancers, solid tumors, and autoimmune and inflammatory disease. Its clinical pipeline includes IO-108, a fully human IgG4 antagonist antibody targeting LILRB2 (ILT4) in Phase 1b/2 for solid tumors including hepatocellular carcinoma, and IO-202, a first-in-class IgG1 antibody targeting LILRB4 (ILT3) in Phase 1b for acute myeloid leukemia and chronic myelomonocytic leukemia, which holds FDA Fast Track and Orphan Drug designations. Preclinical programs include IO-312, a LILRB4-directed bispecific antibody, and IO-106 targeting LAIR1. The company has clinical collaborations with BeiGene, Regeneron, and Roche, and has raised approximately $138 million across Series A and Series B financings from investors including Northern Light Venture Capital, Vivo Capital, CLI Ventures, and the Stanford-StartX Fund. Immune-Onc is a therapeutics developer, not a software or platform company: as of this profile it publishes no public API, developer portal, OpenAPI or other machine-readable contract, no SDKs, no public GitHub organization and no /.well-known/ discovery surface — its only machine-readable documents are two Squarespace RSS feeds for its news and press-release collections. This record therefore captures the company's verified public identity, its published web properties, its clinical-trial registry presence, and the probed security posture of its public web surface.
+
+**Areas:** Company · Biotechnology · Biopharmaceutical · Oncology · Immunotherapy · Immuno-Oncology · Antibodies · Clinical Trials · Life Sciences · Healthcare · Drug Development
+
+## Immune-Onc Therapeutics on APIs.io
+
+Everything profiled for Immune-Onc Therapeutics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/immune-onc-therapeutics/](https://apis.io/providers/immune-onc-therapeutics/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Immune Onc Therapeutics Domain Security](https://apis.io/security/immune-onc-therapeutics/immune-onc-therapeutics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.immune-onc.com/)
+- [Blog](https://www.immune-onc.com/news-1)
+
+## API Evangelist rating
+
+**Kin Score 5.0** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/immune-onc-therapeutics/](https://apis.io/providers/immune-onc-therapeutics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Immune-Onc Therapeutics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/immune-onc-therapeutics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
